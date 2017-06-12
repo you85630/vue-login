@@ -21,7 +21,6 @@
 </template>
 
 <script>
-// import router from 'router/index'
 import { mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
@@ -34,12 +33,6 @@ export default {
       'dellist',
       'editlist'
     ])
-    // dellist (index) {
-    //   this.tablelist.splice(index, 1)
-    // },
-    // editlist (index) {
-    //   router.push({ name: 'edit', params: { editId: index }, query: { name: index } })
-    // }
   }
 }
 </script>

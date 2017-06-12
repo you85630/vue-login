@@ -18,10 +18,25 @@ export default {
   // 修改列表
   saveList (state, index) {
     router.go(-1)
-    console.log(index)
     state.tablelist[index] = state.activelist
   },
   prevList (state) {
     router.go(-1)
+  },
+  // 添加列表
+  pushList (state) {
+    state.listlabel = true
+  },
+  closeLabel (state) {
+    state.listlabel = false
+  },
+  addList (state, labellist) {
+    state.tablelist.push({
+      id: state.tablelist.length + 1,
+      name: state.labellist.name,
+      age: state.labellist.age,
+      from: state.labellist.from
+    })
+    state.listlabel = false
   }
 }

@@ -12,5 +12,12 @@ export default {
   },
   activelist (state) {
     return state.activelist
+  },
+  // 添加列表
+  listlabel (state) {
+    return state.listlabel
+  },
+  labellist (state) {
+    return state.labellist
   }
 }

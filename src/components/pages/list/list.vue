@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <!--<add-list></add-list>-->
+    <add-list></add-list>
     <table-list></table-list>
   </div>
 </template>

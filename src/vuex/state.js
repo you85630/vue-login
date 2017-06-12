@@ -28,5 +28,7 @@ export default{
       age: '10',
       from: 'nanjin'
     }
-  ]
+  ],
+  listlabel: false,
+  labellist: {}
 }
