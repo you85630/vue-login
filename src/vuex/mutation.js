@@ -1,0 +1,27 @@
+import router from 'router/index'
+export default {
+  // 计算器
+  getAdd (state) {
+    state.count++
+  },
+  getRemove (state) {
+    state.count--
+  },
+  // 列表
+  delList (state, index) {
+    state.tablelist.splice(index, 1)
+  },
+  editList (state, index) {
+    router.push({ name: 'edit', params: { editId: index }, query: { name: index } })
+    state.activelist = state.tablelist[index]
+  },
+  // 修改列表
+  saveList (state, index) {
+    router.go(-1)
+    console.log(index)
+    state.tablelist[index] = state.activelist
+  },
+  prevList (state) {
+    router.go(-1)
+  }
+}
