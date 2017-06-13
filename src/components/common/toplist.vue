@@ -2,6 +2,7 @@
   <div class="toplist">
     <router-link to="/">首页</router-link>
     <router-link to="/list">列表页</router-link>
+    <router-link to="/chart">图表页</router-link>
   </div>
 </template>
 

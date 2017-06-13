@@ -5,6 +5,7 @@ Vue.use(Router)
 const Index = resolve => require(['components/pages/index/index'], resolve)
 const List = resolve => require(['components/pages/List/List'], resolve)
 const Edit = resolve => require(['components/pages/edit/edit'], resolve)
+const Chart = resolve => require(['components/pages/chart/chart'], resolve)
 
 export default new Router({
   routes: [
@@ -20,6 +21,10 @@ export default new Router({
       path: '/list/edit/:editId',
       name: 'edit',
       component: Edit
+    }, {
+      path: '/chart',
+      name: 'chart',
+      component: Chart
     }
   ]
 })
