@@ -1594,12 +1594,6 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-echarts@^3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/echarts/-/echarts-3.6.1.tgz#6cb31173c6ac05ba713a613cdf4dd72145e0ab6f"
-  dependencies:
-    zrender "^3.5.1"
-
 editorconfig@^0.13.2:
   version "0.13.2"
   resolved "https://registry.yarnpkg.com/editorconfig/-/editorconfig-0.13.2.tgz#8e57926d9ee69ab6cb999f027c2171467acceb35"
@@ -4157,6 +4151,10 @@ sax@~1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.2.tgz#fd8631a23bc7826bef5d871bdb87378c95647828"
 
+schart.js@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/schart.js/-/schart.js-1.0.1.tgz#137b738b20eb5237884f7ea660ef8e2fc44db318"
+
 schema-utils@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.3.0.tgz#f5877222ce3e931edae039f17eb3716e7137f8cf"
@@ -4710,6 +4708,12 @@ vue-router@^2.3.1:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.5.3.tgz#073783f564b6aece6c8a59c63e298dc2aabfb51b"
 
+vue-schart@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/vue-schart/-/vue-schart-0.1.2.tgz#015e1ed4b45d1f204e8dd07a89414d16ec8079d3"
+  dependencies:
+    schart.js "^1.0.1"
+
 vue-style-loader@^3.0.0, vue-style-loader@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-3.0.1.tgz#c8b639bb2f24baf9d78274dc17e4f264c1deda08"
@@ -4728,7 +4732,7 @@ vue-template-es2015-compiler@^1.2.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.2.tgz#a0a6c50c941d2a4abda963f2f42c337ac450ee95"
 
-vue@^2.3.3:
+vue@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.4.tgz#5ec3b87a191da8090bbef56b7cfabd4158038171"
 
@@ -4959,7 +4963,3 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
-
-zrender@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/zrender/-/zrender-3.5.1.tgz#70494096f017684c714ddd8bfa24cda6feecec34"

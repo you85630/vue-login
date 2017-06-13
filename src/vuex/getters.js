@@ -19,5 +19,12 @@ export default {
   },
   labellist (state) {
     return state.labellist
+  },
+  // 图表数据
+  charts (state) {
+    return state.charts
+  },
+  charts1 (state) {
+    return state.charts1
   }
 }
