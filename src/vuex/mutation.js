@@ -37,6 +37,9 @@ export default {
       age: state.labellist.age,
       from: state.labellist.from
     })
+    state.labellist.name = ''
+    state.labellist.age = ''
+    state.labellist.from = ''
     state.listlabel = false
   }
 }
