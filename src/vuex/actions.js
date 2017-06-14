@@ -1,11 +1,4 @@
 export default {
-  // 计算器
-  add ({ commit }) {
-    commit('getAdd')
-  },
-  remove ({ commit }) {
-    commit('getRemove')
-  },
   // 列表页
   dellist ({ commit }, index) {
     commit('delList', index)

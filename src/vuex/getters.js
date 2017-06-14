@@ -1,8 +1,4 @@
 export default {
-  // 计算器
-  count (state) {
-    return state.count
-  },
   // 列表页
   tablelist (state) {
     return state.tablelist

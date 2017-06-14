@@ -1,12 +1,5 @@
 import router from 'router/index'
 export default {
-  // 计算器
-  getAdd (state) {
-    state.count++
-  },
-  getRemove (state) {
-    state.count--
-  },
   // 列表
   delList (state, index) {
     state.tablelist.splice(index, 1)

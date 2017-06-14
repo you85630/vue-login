@@ -1,9 +1,12 @@
 export default {
-  count: 0,
   activelist: {},
   // 表单数据
   tablelist: [
     {
+      name: '姓名',
+      age: '年龄',
+      from: '所在地'
+    }, {
       id: 0,
       name: 'lily',
       age: '30',
