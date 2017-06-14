@@ -22,5 +22,9 @@ export default {
   },
   addlist ({commit}, index) {
     commit('addList', index)
+  },
+  // 搜索
+  searchlist ({commit}, name) {
+    commit('searchList', name)
   }
 }

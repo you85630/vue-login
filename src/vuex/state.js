@@ -3,10 +3,6 @@ export default {
   // 表单数据
   tablelist: [
     {
-      name: '姓名',
-      age: '年龄',
-      from: '所在地'
-    }, {
       id: 0,
       name: 'lily',
       age: '30',
@@ -66,5 +62,6 @@ export default {
       { value: 135, name: '视频广告' },
       { value: 1548, name: '搜索引擎' }
     ]
-  }
+  },
+  key: ''
 }

@@ -34,5 +34,9 @@ export default {
     state.labellist.age = ''
     state.labellist.from = ''
     state.listlabel = false
+  },
+  // 搜索
+  searchList (state, name) {
+    state.key = name
   }
 }
