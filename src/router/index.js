@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
 
-const Index = resolve => require(['components/pages/index/index'], resolve)
-const List = resolve => require(['components/pages/List/List'], resolve)
-const Edit = resolve => require(['components/pages/edit/edit'], resolve)
-const Chart = resolve => require(['components/pages/chart/chart'], resolve)
+const Index = resolve => require(['components/pages/index'], resolve)
+const List = resolve => require(['components/pages/list'], resolve)
+const Edit = resolve => require(['components/pages/edit'], resolve)
+const Chart = resolve => require(['components/pages/chart'], resolve)
 
 export default new Router({
   routes: [
