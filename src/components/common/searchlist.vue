@@ -1,7 +1,6 @@
 <template>
   <div class="search-list">
-    按姓名搜索：
-    <input type="text" v-model="key" @keyup.enter="onSearch">
+    <input type="text" v-model="key" placeholder="搜索" @keyup.enter="onSearch">
   </div>
 </template>
 
@@ -15,10 +14,8 @@ export default {
   },
   methods: {
     onSearch () {
-      if (this.key !== '') {
-        this.searchlist(this.key)
-        this.key = ''
-      }
+      this.searchlist(this.key)
+      this.key = ''
     },
     ...mapActions([
       'searchlist'
@@ -31,7 +28,7 @@ export default {
 .search-list {
   margin-bottom: 10px;
   input{
-    width: 320px;
+    width: 400px;
   }
 }
 </style>
