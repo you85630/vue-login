@@ -32,7 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 .table-list {
-  width: 400px;
+  width: 100%;
   border: 1px solid #ccc;
   ul {
     font-size: 0;

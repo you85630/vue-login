@@ -45,6 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 .add-list {
+  width: 100%;
   margin-bottom: 10px;
   button {
     background-color: #06c;

@@ -8,7 +8,9 @@
 
 <style lang="scss" scoped>
   .toplist{
-    margin: 10px 0;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
     a{
       color: blue;
       margin-right: 10px;
