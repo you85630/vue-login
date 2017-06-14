@@ -5,8 +5,9 @@ export default {
       return state.tablelist.filter(function (item) {
         return item.name.indexOf(state.key) > -1
       })
+    } else {
+      return state.tablelist
     }
-    return state.tablelist
   },
   addlist (state) {
     return state.addlist

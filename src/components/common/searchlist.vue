@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="search-list">
+    按姓名搜索：
     <input type="text" v-model="key" @keyup.enter="onSearch">
   </div>
 </template>
@@ -27,7 +28,10 @@ export default {
 </script>
 
 <style lang="scss">
-input {
+.search-list {
   margin-bottom: 10px;
+  input{
+    width: 320px;
+  }
 }
 </style>
