@@ -23,5 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .chart-list {
+  width: 500px;
+  margin: 0 auto;
 }
 </style>

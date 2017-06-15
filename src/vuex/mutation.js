@@ -11,7 +11,7 @@ export default {
     state.tablelist.splice(index, 1)
   },
   editList (state, index) {
-    router.push({ name: 'edit', params: { editId: index }, query: { name: index } })
+    router.push({ name: 'edit', params: { editId: index }, query: { page: index } })
     state.activelist = state.tablelist[index]
   },
   // 修改列表

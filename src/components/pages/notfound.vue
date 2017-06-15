@@ -1,13 +1,14 @@
 <template>
-  <div class="index">
-    这里是首页~~~
+  <div class="notfound">
+    404页面
   </div>
 </template>
 
 <style lang="scss" scoped>
-.index {
+.notfound{
   width: 500px;
   margin: 0 auto;
   text-align: center;
+  font-size: 50px;
 }
 </style>

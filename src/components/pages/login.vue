@@ -10,7 +10,9 @@
         <input type="password" v-model="login.password">
       </label>
       <div class="btn">
-        <button @click='logIn'>提交</button>
+        <div @click='logIn'>
+          <router-link to="/">提交</router-link>
+        </div>
       </div>
     </form>
   </div>
@@ -27,6 +29,7 @@ export default {
   watch: {
     login: {
       handler: function (login) {
+        local.remove()
         local.save(login)
       },
       deep: true

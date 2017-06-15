@@ -40,6 +40,7 @@ export default {
 <style lang="scss" scoped>
 .edit {
   width: 300px;
+  margin: 0 auto;
   border: 1px solid #ccc;
   padding: 10px;
   label {
