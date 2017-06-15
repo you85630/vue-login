@@ -2,7 +2,9 @@ import router from 'router/index'
 export default {
   // 获取数据
   tableList (state, res) {
-    state.tablelist = res.data.data
+    state.tablelist = res.data.tablist
+    state.charts = res.data.charts
+    state.charts1 = res.data.charts1
   },
   // 列表
   delList (state, index) {

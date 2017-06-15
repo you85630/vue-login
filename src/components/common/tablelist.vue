@@ -31,9 +31,6 @@ export default {
       'dellist',
       'editlist'
     ])
-  },
-  created () {
-    this.$store.dispatch('tablelist')
   }
 }
 </script>

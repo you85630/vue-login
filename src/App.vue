@@ -14,6 +14,9 @@ import topList from 'components/common/toplist'
 export default {
   components: {
     topList
+  },
+  created () {
+    this.$store.dispatch('tablelist')
   }
 }
 </script>

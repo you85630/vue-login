@@ -2,7 +2,7 @@ import axios from 'axios'
 export default {
   // 获取数据
   tablelist ({ commit }, res) {
-    axios.get('https://www.easy-mock.com/mock/593e1d4a8ac26d795fe56017/data/tablelist')
+    axios.get('https://www.easy-mock.com/mock/593e1d4a8ac26d795fe56017/data/demodata')
       .then(function (res) {
         commit('tableList', res)
       })
