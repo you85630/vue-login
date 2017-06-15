@@ -1,5 +1,9 @@
 import router from 'router/index'
 export default {
+  // 获取数据
+  tableList (state, res) {
+    state.tablelist = res.data.data
+  },
   // 列表
   delList (state, index) {
     state.tablelist.splice(index, 1)

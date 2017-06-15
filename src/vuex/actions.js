@@ -1,4 +1,12 @@
+import axios from 'axios'
 export default {
+  // 获取数据
+  tablelist ({ commit }, res) {
+    axios.get('https://www.easy-mock.com/mock/593e1d4a8ac26d795fe56017/data/tablelist')
+      .then(function (res) {
+        commit('tableList', res)
+      })
+  },
   // 列表页
   dellist ({ commit }, index) {
     commit('delList', index)
@@ -14,17 +22,17 @@ export default {
     commit('prevList', index)
   },
   // 添加列表
-  pushlist ({commit}, index) {
+  pushlist ({ commit }, index) {
     commit('pushList', index)
   },
-  closelabel ({commit}, index) {
+  closelabel ({ commit }, index) {
     commit('closeLabel', index)
   },
-  addlist ({commit}, index) {
+  addlist ({ commit }, index) {
     commit('addList', index)
   },
   // 搜索
-  searchlist ({commit}, key) {
+  searchlist ({ commit }, key) {
     commit('searchList', key)
   }
 }
