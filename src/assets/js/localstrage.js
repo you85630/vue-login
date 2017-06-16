@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'data'
+const STORAGE_KEY = 'login'
 export default {
   remove () {
     window.localStorage.clear()

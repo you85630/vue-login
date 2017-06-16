@@ -1,11 +1,9 @@
 <template>
   <div id="app">
     <top-list></top-list>
-    <transition>
-      <keep-alive>
-        <router-view></router-view>
-      </keep-alive>
-    </transition>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
