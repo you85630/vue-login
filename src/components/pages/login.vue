@@ -29,7 +29,6 @@ export default {
   watch: {
     login: {
       handler: function (login) {
-        local.remove()
         local.save(login)
       },
       deep: true
@@ -37,6 +36,7 @@ export default {
   },
   methods: {
     logIn () {
+      this.login.length = 0
       this.login.push({
         username: this.login.username,
         password: this.login.password
