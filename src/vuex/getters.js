@@ -3,7 +3,13 @@ export default {
   tablelist (state) {
     if (state.key !== '') {
       return state.tablelist.filter(function (item) {
-        return item.from.indexOf(state.key.toLowerCase()) > -1 || item.name.indexOf(state.key.toLowerCase()) > -1 || item.age.indexOf(state.key.toLowerCase()) > -1
+        for (var key in item) {
+          if (typeof item[key] === 'string') {
+            if (~item[key].indexOf(state.key.toLowerCase())) {
+              return true
+            }
+          }
+        }
       })
     } else {
       return state.tablelist
