@@ -27,7 +27,8 @@ export default {
 <style lang="scss">
 .search-list {
   margin-bottom: 10px;
-  input{
+  font-size: 0;
+  input {
     width: 400px;
   }
 }

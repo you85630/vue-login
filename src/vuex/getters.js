@@ -4,7 +4,7 @@ export default {
     if (state.key !== '') {
       return state.tablelist.filter(function (item) {
         for (var key in item) {
-          if (typeof item[key] === 'string') {
+          if (item[key] && typeof item[key] === 'string') {
             if (~item[key].indexOf(state.key.toLowerCase())) {
               return true
             }
