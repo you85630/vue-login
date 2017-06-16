@@ -3,7 +3,7 @@ export default {
   tablelist (state) {
     if (state.key !== '') {
       return state.tablelist.filter(function (item) {
-        return item.from.indexOf(state.key.toLowerCase()) > -1
+        return item.from.indexOf(state.key.toLowerCase()) > -1 || item.name.indexOf(state.key.toLowerCase()) > -1 || item.age.indexOf(state.key.toLowerCase()) > -1
       })
     } else {
       return state.tablelist
