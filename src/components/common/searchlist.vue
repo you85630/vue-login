@@ -1,6 +1,6 @@
 <template>
   <div class="search-list">
-    <input type="text" v-model="key" placeholder="搜索" @keyup.enter="onSearch">
+    <input type="text" v-model="key" placeholder="按所在地搜索" @keyup.enter="onSearch">
   </div>
 </template>
 
