@@ -44,5 +44,15 @@ export default {
   // 搜索
   searchList (state, name) {
     state.key = name
+  },
+  // 登录
+  logIn (state) {
+    state.login.length = 0
+    state.login.push({
+      username: state.login.username,
+      password: state.login.password
+    })
+    state.login.username = ''
+    state.login.password = ''
   }
 }

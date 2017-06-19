@@ -34,5 +34,9 @@ export default {
   },
   charts1 (state) {
     return state.charts1
+  },
+  // 登录
+  login (state) {
+    return state.login
   }
 }

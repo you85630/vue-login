@@ -19,12 +19,13 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 import local from 'assets/js/localstrage'
 export default {
-  data () {
-    return {
-      login: []
-    }
+  computed: {
+    ...mapGetters([
+      'login'
+    ])
   },
   watch: {
     login: {
@@ -35,15 +36,9 @@ export default {
     }
   },
   methods: {
-    logIn () {
-      this.login.length = 0
-      this.login.push({
-        username: this.login.username,
-        password: this.login.password
-      })
-      this.login.username = ''
-      this.login.password = ''
-    }
+    ...mapActions([
+      'logIn'
+    ])
   }
 }
 </script>

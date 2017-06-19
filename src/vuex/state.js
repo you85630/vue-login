@@ -7,5 +7,6 @@ export default {
   // 图表数据
   charts: {},
   charts1: {},
-  key: ''
+  key: '',
+  login: []
 }

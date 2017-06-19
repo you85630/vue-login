@@ -34,5 +34,9 @@ export default {
   // 搜索
   searchlist ({ commit }, key) {
     commit('searchList', key)
+  },
+  // 登录
+  logIn ({ commit }) {
+    commit('logIn')
   }
 }
