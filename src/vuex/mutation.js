@@ -46,13 +46,19 @@ export default {
     state.key = name
   },
   // 登录
-  logIn (state) {
+  logIn (state, res) {
     state.login.length = 0
     state.login.push({
       username: state.login.username,
       password: state.login.password
     })
+    sessionStorage.setItem('user', JSON.stringify(state.login))
+    state.uID = res
     state.login.username = ''
     state.login.password = ''
+  },
+  logOut (state) {
+    window.sessionStorage.removeItem('user')
+    state.uID = []
   }
 }

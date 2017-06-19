@@ -1,9 +1,9 @@
-const STORAGE_KEY = 'login'
+const LOGIN_KEY = 'login'
 export default {
   remove () {
-    window.localStorage.clear()
+    window.sessionStorage.removeItem(LOGIN_KEY)
   },
   save (items) {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(items))
+    window.sessionStorage.setItem(LOGIN_KEY, JSON.stringify(items))
   }
 }

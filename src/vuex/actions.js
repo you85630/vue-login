@@ -36,7 +36,14 @@ export default {
     commit('searchList', key)
   },
   // 登录
-  logIn ({ commit }) {
-    commit('logIn')
+  logIn ({ commit }, res) {
+    axios.post('https://www.easy-mock.com/mock/59439d588ac26d795f1a82e9/data/login')
+      .then(function (res) {
+        commit('logIn', res.data)
+      })
+  },
+  // 退出
+  logOut ({ commit }) {
+    commit('logOut')
   }
 }

@@ -38,5 +38,9 @@ export default {
   // 登录
   login (state) {
     return state.login
+  },
+  // 登录返回姓名
+  uID (state) {
+    return state.uID
   }
 }

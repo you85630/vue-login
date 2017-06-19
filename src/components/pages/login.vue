@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <form action="">
+    <form action="" v-if="!uID.success">
       <label for="username">
         <span>登录名：</span>
         <input type="text" v-model="login.username">
@@ -11,33 +11,30 @@
       </label>
       <div class="btn">
         <div @click='logIn'>
-          <router-link to="/">提交</router-link>
+          <router-link to="/login">登录</router-link>
         </div>
       </div>
     </form>
+    <div class="loginout" v-if="uID.success">
+      <h1>你好{{uID.name}}</h1>
+      <a href="" @click='logOut'>退出</a>
+    </div>
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import local from 'assets/js/localstrage'
 export default {
   computed: {
     ...mapGetters([
-      'login'
+      'login',
+      'uID'
     ])
-  },
-  watch: {
-    login: {
-      handler: function (login) {
-        local.save(login)
-      },
-      deep: true
-    }
   },
   methods: {
     ...mapActions([
-      'logIn'
+      'logIn',
+      'logOut'
     ])
   }
 }

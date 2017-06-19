@@ -8,5 +8,6 @@ export default {
   charts: {},
   charts1: {},
   key: '',
-  login: []
+  login: [],
+  uID: {}
 }
