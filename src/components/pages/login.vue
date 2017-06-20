@@ -17,7 +17,7 @@
     </form>
     <div class="loginout" v-if="uID.success">
       <h1>你好,{{uID.data.name}}</h1>
-      <a href="" @click='logOut'>退出</a>
+      <button  @click='logOut'>退出</button>
     </div>
   </div>
 </template>
@@ -58,11 +58,15 @@ export default {
     }
   }
   .loginout{
-    h1,a{
+    h1,button{
       display: inline-block;
     }
     h1{
       margin-right: 10px;
+    }
+    button{
+      border: none;
+      background: none;
     }
   }
 }

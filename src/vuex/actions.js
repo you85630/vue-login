@@ -37,7 +37,7 @@ export default {
   },
   // 登录
   logIn ({ commit }, res) {
-    axios.post('https://www.easy-mock.com/mock/59439d588ac26d795f1a82e9/data/login')
+    axios.get('https://www.easy-mock.com/mock/59439d588ac26d795f1a82e9/data/login')
       .then(function (res) {
         commit('logIn', res.data)
       })
