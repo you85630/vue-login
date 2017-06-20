@@ -9,7 +9,7 @@ const List = resolve => require(['components/pages/list'], resolve)
 const Edit = resolve => require(['components/pages/edit'], resolve)
 const Chart = resolve => require(['components/pages/chart'], resolve)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   routes: [
     {
@@ -20,19 +20,31 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: Index
+      component: Index,
+      meta: {
+        requireAuth: true
+      }
     }, {
       path: '/list',
       name: 'user',
-      component: List
+      component: List,
+      meta: {
+        requireAuth: true
+      }
     }, {
       path: '/list/edit/:editId',
       name: 'edit',
-      component: Edit
+      component: Edit,
+      meta: {
+        requireAuth: true
+      }
     }, {
       path: '/chart',
       name: 'chart',
-      component: Chart
+      component: Chart,
+      meta: {
+        requireAuth: true
+      }
     }, {
       path: '/login',
       name: 'login',
@@ -40,3 +52,21 @@ export default new Router({
     }
   ]
 })
+// 验证 token，存在才跳转
+router.beforeEach((to, from, next) => {
+  let token = localStorage.getItem('user')
+  if (to.meta.requireAuth) {
+    if (token) {
+      next()
+    } else {
+      next({
+        path: '/login',
+        query: { redirect: to.fullPath }
+      })
+    }
+  } else {
+    next()
+  }
+})
+
+export default router

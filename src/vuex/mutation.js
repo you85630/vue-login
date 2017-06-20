@@ -2,9 +2,9 @@ import router from 'router/index'
 export default {
   // 获取数据
   tableList (state, res) {
-    state.tablelist = res.data.tablist
-    state.charts = res.data.charts
-    state.charts1 = res.data.charts1
+    state.tablelist = res.tablist
+    state.charts = res.charts
+    state.charts1 = res.charts1
   },
   // 列表
   delList (state, index) {
@@ -53,7 +53,6 @@ export default {
       password: state.login.password
     })
     sessionStorage.setItem('user', JSON.stringify(state.login))
-    state.uID = res
     state.login.username = ''
     state.login.password = ''
   },
