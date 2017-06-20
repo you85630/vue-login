@@ -53,6 +53,7 @@ export default {
       password: state.login.password
     })
     sessionStorage.setItem('user', JSON.stringify(state.login))
+    state.uID = res
     state.login.username = ''
     state.login.password = ''
   },
