@@ -6,6 +6,9 @@ export default {
       .then(function (res) {
         commit('tableList', res.data)
       })
+      .catch(function (err) {
+        console.log(err)
+      })
   },
   // 列表页
   dellist ({ commit }, index) {
@@ -40,6 +43,9 @@ export default {
     axios.get('https://www.easy-mock.com/mock/59439d588ac26d795f1a82e9/data/user')
       .then(function (res) {
         commit('logIn', res.data)
+      })
+      .catch(function (err) {
+        console.log(err)
       })
   },
   // 退出
