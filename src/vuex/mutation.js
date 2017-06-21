@@ -60,13 +60,13 @@ export default {
     state.login.username = ''
     state.login.password = ''
   },
+  // 获取页面信息
+  userLogin (state) {
+    state.user = JSON.parse(sessionStorage.getItem('user'))
+  },
   // 退出
   logOut (state) {
     window.sessionStorage.clear()
     location.reload()
-  },
-  // 获取页面信息
-  userLogin (state) {
-    state.user = JSON.parse(sessionStorage.getItem('user'))
   }
 }
