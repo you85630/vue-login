@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <form action="" v-if="!uID.success">
+    <form action="">
       <label for="username">
         <span>登录名：</span>
         <input type="text" v-model="login.username">
@@ -15,8 +15,8 @@
         </div>
       </div>
     </form>
-    <div class="loginout" v-if="uID.success">
-      <h1>你好,{{uID.data.name}}</h1>
+    <div class="loginout" v-if="user.success">
+      <h1>你好,{{user.data.name}}</h1>
       <button  @click='logOut'>退出</button>
     </div>
   </div>
@@ -28,7 +28,7 @@ export default {
   computed: {
     ...mapGetters([
       'login',
-      'uID'
+      'user'
     ])
   },
   methods: {

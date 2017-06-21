@@ -54,19 +54,16 @@ const router = new Router({
 })
 // 验证 token，存在才跳转
 router.beforeEach((to, from, next) => {
-  let token = sessionStorage.getItem('user')
+  let login = sessionStorage.getItem('login')
   if (to.meta.requireAuth) {
-    if (token) {
-      next()
-    } else {
+    if (!login) {
       next({
         path: '/login',
         query: { redirect: to.fullPath }
       })
     }
-  } else {
-    next()
   }
+  next()
 })
 
 export default router

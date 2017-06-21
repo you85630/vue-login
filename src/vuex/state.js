@@ -9,5 +9,5 @@ export default {
   charts1: {},
   key: '',
   login: [],
-  uID: {}
+  user: {}
 }

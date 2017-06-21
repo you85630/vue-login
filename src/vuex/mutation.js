@@ -52,13 +52,13 @@ export default {
       username: state.login.username,
       password: state.login.password
     })
-    sessionStorage.setItem('user', JSON.stringify(state.login))
-    state.uID = res
+    sessionStorage.setItem('login', JSON.stringify(state.login))
+    sessionStorage.setItem('user', JSON.stringify(res))
+
     state.login.username = ''
     state.login.password = ''
   },
   logOut (state) {
-    window.sessionStorage.removeItem('user')
-    state.uID = []
+    window.sessionStorage.clear()
   }
 }

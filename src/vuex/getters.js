@@ -40,7 +40,9 @@ export default {
     return state.login
   },
   // 登录返回姓名
-  uID (state) {
-    return state.uID
+  user (state, data) {
+    state.user = sessionStorage.getItem('user')
+    console.log(state.user)
+    return state.user
   }
 }
