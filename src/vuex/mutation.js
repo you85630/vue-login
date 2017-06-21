@@ -55,10 +55,18 @@ export default {
     sessionStorage.setItem('login', JSON.stringify(state.login))
     sessionStorage.setItem('user', JSON.stringify(res))
 
+    state.user = res
+
     state.login.username = ''
     state.login.password = ''
   },
+  // 退出
   logOut (state) {
     window.sessionStorage.clear()
+    location.reload()
+  },
+  // 获取页面信息
+  userLogin (state) {
+    state.user = JSON.parse(sessionStorage.getItem('user'))
   }
 }

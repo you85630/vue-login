@@ -45,5 +45,9 @@ export default {
   // 退出
   logOut ({ commit }) {
     commit('logOut')
+  },
+  // 获取页面信息
+  userlogin ({commit}) {
+    commit('userLogin')
   }
 }

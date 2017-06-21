@@ -41,8 +41,6 @@ export default {
   },
   // 登录返回姓名
   user (state, data) {
-    state.user = sessionStorage.getItem('user')
-    console.log(state.user)
     return state.user
   }
 }
