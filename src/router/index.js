@@ -10,7 +10,6 @@ const Edit = resolve => require(['components/pages/edit'], resolve)
 const Chart = resolve => require(['components/pages/chart'], resolve)
 
 const router = new Router({
-  mode: 'history',
   routes: [
     {
       path: '*',
