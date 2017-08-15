@@ -7,7 +7,6 @@ const Login = resolve => require(['components/pages/login'], resolve)
 const Index = resolve => require(['components/pages/index'], resolve)
 const List = resolve => require(['components/pages/list'], resolve)
 const Edit = resolve => require(['components/pages/edit'], resolve)
-const Chart = resolve => require(['components/pages/chart'], resolve)
 
 const router = new Router({
   routes: [
@@ -34,13 +33,6 @@ const router = new Router({
       path: '/list/edit/:editId',
       name: 'edit',
       component: Edit,
-      meta: {
-        requireAuth: true
-      }
-    }, {
-      path: '/chart',
-      name: 'chart',
-      component: Chart,
       meta: {
         requireAuth: true
       }
